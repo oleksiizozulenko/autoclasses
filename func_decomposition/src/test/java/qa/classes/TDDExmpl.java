@@ -1,5 +1,6 @@
 package qa.classes;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -16,6 +17,15 @@ public class TDDExmpl {
 	public void setUp(){
 		driver = new FirefoxDriver();
 	}
+	
+	@After
+	public void tearDown(){
+		if (driver != null){
+			driver.close();
+			driver = null;
+		}
+	}
+	
 	
 	@Test
 	public void testTDDFirst(){
