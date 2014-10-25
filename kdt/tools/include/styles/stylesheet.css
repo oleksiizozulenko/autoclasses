@@ -1,0 +1,71 @@
+
+body {
+	font:normal 68% verdana,arial,helvetica;
+	color:#000000;
+	font-size:18px
+}
+table
+{
+	border-collapse: collapse;
+	font-size:small;
+}
+h1 {
+	MARGIN: 0px 0px 5px; 
+	FONT: 125% verdana,arial,helvetica;
+}
+h2 {
+	MARGIN-TOP: 1em; 
+	MARGIN-BOTTOM: 0.5em; 
+	FONT: bold 125% verdana,arial,helvetica;
+}
+.TableHeader {
+	//background: #efefef;
+	color: #000;
+	font-weight: bold;
+	horizontal-align: center;
+}
+a {
+	margin-right: 5px;
+}
+span {
+	margin-right: 7px;
+}
+table.overviewTitleTable
+{
+	width: 100%;
+	margin-bottom: 25px;
+	background-color: #E3E3E3;
+}
+table.overviewEnvironmentTable
+{
+	min-width: 50%;
+	margin-bottom: 20px;
+}
+td.overviewEnvironmentName
+{
+	border: 1px solid #C0C9B7;
+}
+td.overviewEnvironmentValue
+{
+	
+	border: 1px solid #C0C9B7;
+}
+table.overviewSummaryTable
+{
+	width: 100%;
+	text-align: left;
+	font-family: sans-serif,arial,verdana,helvetica;
+}
+tr.overviewSummaryTableHeader
+{
+	background-color: #E8E8E8;
+	font-style: normal;
+}
+tr.overviewSummaryTableContent
+{
+	background-color: #FAFCF8;
+}
+td
+{
+	padding-left: 3px;
+}

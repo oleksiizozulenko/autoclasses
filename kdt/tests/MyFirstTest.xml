@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestCase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TestCaseName>First KDT Test</TestCaseName>
+  <Description />
+  <Author>OZ</Author>
+  <TestSteps>
+    <TestStep>
+      <FunctionalArea>Tests.Library.MyUserAction</FunctionalArea>
+      <ActionName>UserAction</ActionName>
+      <ExecutionFlow>Record Error Stop Testcase</ExecutionFlow>
+        <Parameters >
+            <Parameter>
+                <ParameterName>myparameter</ParameterName>
+                <ParameterValue><![CDATA[testParam]]></ParameterValue>
+            </Parameter>
+        </Parameters>
+      <Steps />
+      <Instance />
+      <StepNumber>1</StepNumber>
+    </TestStep>
+   
+  </TestSteps>
+  <Columns>
+    <Column width="12">StepNumber</Column>
+    <Column width="31.43">FunctionalArea</Column>
+    <Column width="24">ActionName</Column>
+    <Column width="24">ExecutionFlow</Column>
+    <Column width="15.43">ParameterName</Column>
+    <Column width="20.86">ParameterValue</Column>
+    <Column width="10">Instance</Column>
+    <Column width="50">Steps</Column>
+  </Columns>
+</TestCase>

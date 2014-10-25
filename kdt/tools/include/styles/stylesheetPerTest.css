@@ -1,0 +1,517 @@
+body
+{
+	font-family: Calibri,Arial,Tahoma;
+}
+
+h1 { margin-bottom: .85em; border-bottom: solid 1px #d9d9d9; font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 180%; text-indent: 5px; letter-spacing: -1px; }
+
+/* actions report cells */
+td
+{
+	font-weight:110%;
+	FONT-SIZE: 95%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 3px;
+}
+
+img
+{
+	border: none;
+}
+
+/* test cases tree page link */
+a.treeLink
+{
+	text-decoration: none;
+	font-family: arial,verdana,helvetica,sans-serif;
+	color: #515181;
+	font-size: small;
+}
+
+/* test description title */
+p.testDescriptionTitle
+{
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+/* test description - pass*/
+div.testPassCaption
+{
+	margin-left: 20px;
+	margin-bottom: 23px;
+	font-size: 130%;
+	color: #38B275;
+}
+
+/* test description - failed */
+div.testFailCaption
+{
+	margin-left: 20px;
+	margin-bottom: 25px;
+	font-size: 130%;
+	color: #FF0000;	
+}
+
+/* test scripts list title */
+p.scriptLinkTableTitle
+{
+	font-style: italic;
+	margin-bottom: 0.89em;
+}
+
+/* test scripts list table */
+table.scriptLinkTable
+{
+	border-collapse: collapse;
+	margin-left: 25px;
+	margin-bottom: 32px;
+}
+
+table.scriptLinkTable tr td
+{
+	padding-bottom: 0px;
+}
+
+/* test scripts list table header */
+tr.scriptLinkTableHeader
+{
+	border-bottom: 1px #8D8D8D solid;
+}
+
+/* test scripts list table cell */
+tr.scriptLinkTableHeader th
+{
+	font-size: 0.85em;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 3px;
+	
+}
+
+/* test script line - pass */
+tr.itemSuccessLink td
+{
+	color: #38B275;
+	font-size: 0.85em;
+}
+
+/* test script line - fail */
+tr.itemFailLink td
+{
+	color: #F14A12;
+	font-size: 0.85em;
+}
+
+/* test script line - not run */
+tr.itemNotRunLink td
+{
+	color: #8C8D8D;
+	font-size: 0.85em;
+}
+
+/* test script line - fail link */
+tr.itemFailLink td a
+{
+	color: #F14A12;
+	margin: 0px;
+}
+
+/* test script line - pass link */
+tr.itemNotRunLink td a
+{
+	color: #8C8D8D;
+	margin: 0px;
+}
+
+/* test script path cell */
+td.scriptLinkTableCell
+{
+	padding-right: 9px;
+}
+
+/* test script execution time cell */
+td.scriptLinkTableCellTime
+{
+	width: 94px;
+}
+
+/* test script result cell*/
+td.scriptLinkTableCellResult
+{
+	width: 45px;
+	padding-right: 7px;
+}
+
+/* test script error link */
+td.scriptLinkTableCellErrorLink
+{
+	width: 59px;
+}
+
+/* test script type */
+td.scriptLinkTableCellType
+{
+	width: 72px;
+}
+
+/* test script name in suite */
+td.scriptLinkTableCellName
+{
+	min-width: 85px;
+	white-space: nowrap;
+	padding-right: 15px;
+}
+
+/* summary error title */
+p.headerErrorTitle
+{
+	font-style: italic;
+	font-weight: 500;
+	color: #C83838;
+}
+
+/* summary error table */
+table.headerErrorText
+{
+	color: #8D1717;
+	background-color: #FFE0E0;
+	padding: 10px;
+	border-radius: 25px;
+	min-width: 200px;
+	margin-left: 25px;
+	margin-bottom: 35px;
+}
+
+tr.itemSuccess
+{
+	color: #38B275;
+}
+
+tr.itemFail
+{
+	color: #F14A12;
+}
+
+tr.itemNotRun
+{
+	color: #8C8D8D;
+}
+
+span.expandErrorDetailsButton
+{
+	font-style: italic;	
+}
+
+div.errorDetails
+{
+	display: none;
+}
+
+div.headerErrorText
+{
+	color: #000000;
+	background-color: #FFFFB4;
+	border-radius: 5px;
+	border: 1px #D89D77 solid;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* script report header */
+p.scriptReportHeader
+{
+	margin-top: 26px;
+	font-style: italic;
+	margin-bottom: 8px;
+}
+
+/* script report header table */
+table.scriptReportDetailsTable
+{
+	margin-top: 0px;
+	margin-left: 25px;
+	border-collapse: collapse;
+	font-size: 0.7em;
+}
+
+/* script report header table caption */
+tr.scriptReportDetailsTableHeader th
+{
+	text-align: left;
+	font-weight: normal;
+	border-bottom: 1px #969696 solid;
+	color: #707070;
+}
+
+/* script report header table caption time cell*/
+th.scriptReportDetailsTableHeaderTime
+{
+	padding-right: 12px;
+}
+
+/* script report header table cell */
+td.scriptReportDetailsTableCell
+{
+	padding-left: 0px;
+	padding-right: 12px;
+	padding-top: 1px;
+}
+
+div.itemSuccessCaption
+{
+	font-weight: 120%;
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #02914F;
+}
+
+div.itemFailCaption
+{
+	font-weight: 150%;
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #F00303;
+}
+
+div.itemNotRunCaption
+{
+	font-weight: 120%;
+	margin-top: 45px;
+	margin-left: 10px;
+	color: #888888;
+}
+
+/* script report actions table title */
+p.blockHeader
+{
+	margin-top: 20px;
+	margin-left: 25px;
+	font-style: italic;
+	font-size: 100%;
+	color: #BBBBBB;
+}
+
+div.informationMessage
+{
+	font-weight:100%;
+	font-size: 110%;
+	color: #8D8D8D;
+}
+
+table.actions
+{
+	border-collapse: collapse;
+	margin-bottom: 35px;
+}
+
+tr.actionsLogHeader
+{
+	background-color: #41416D;
+	color: #FFFFFF;
+}
+
+th.actionsLogHeaderCell
+{
+	padding-left: 5px;
+	font-weight:150%;
+	text-align:left;
+	FONT-SIZE: 95%;
+}
+
+tr.actionsLogPassOdd
+{
+	background-color: #DCE6F1;
+}
+
+tr.actionsLogPassEven
+{
+	background-color: #B8CCE4;
+}
+
+td.actionDateTime
+{
+	font-weight:100%;
+	FONT-SIZE: 95%;
+}
+
+tr.actionsLogErrorOdd
+{
+	background-color: #FFE0E0;
+}
+
+tr.actionsLogErrorEven
+{
+	background-color: #FFCECA;
+}
+
+tr.actionsLogNotRunOdd
+{
+	background-color: #F1F1F1;
+}
+
+tr.actionsLogNotRunEven
+{
+	background-color: #E5E5E5;
+}
+
+tr.actionsLogCleanupOdd
+{
+	background-color: #D7EEAF;
+}
+
+tr.actionsLogCleanupEven
+{
+	background-color: #BFCF8E;
+}
+
+tr.actionLogTerminatedByTimeout
+{
+	background-color: #FFCECA;
+}
+
+tr.actionsLogCancelledOdd
+{
+	background-color: #F1F1F1;
+}
+
+tr.actionsLogCancelledEven
+{
+	background-color: #E5E5E5;
+}
+
+div.screenShotMessage
+{
+	FONT-SIZE: 95%;
+	color: #9B9B9B;
+	background-color: #F0EEE5;
+	margin: 1px;
+	border-radius: 25px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+div.crashMessage
+{
+	FONT-SIZE: 95%;
+	color: #CA0D0D;
+	background-color: #DFE1EF;
+	margin: 1px;
+	border-radius: 25px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+div.errorMessage
+{
+	FONT-SIZE: 95%;
+	color: #CA0D0D;
+	background-color: #FFF0A9;
+	margin: 1px;
+	border-radius: 25px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+div.warningMessage
+{
+	FONT-SIZE: 95%;
+	color: #B87F1F;
+	background-color: #FFF7D8;
+	margin: 1px;
+	border-radius: 25px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+div.infoMessage
+{
+	FONT-SIZE: 95%;
+	color: #6788B0;
+	background-color: #EFEDE7;
+	margin: 1px;
+	border-radius: 25px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+h3.errorTitle
+{
+	font-size: large;
+	margin-top: 7px;
+	margin-bottom: 12px;
+}
+
+span.messageTime
+{
+	color: #000000;
+	font-size: medium;
+	font-weight: normal;
+	float:right;
+	margin-right: 10px;
+}
+
+div.messageText
+{
+	color: #000000;
+	margin-bottom: 19px;
+}
+
+span.prefixExceptionMessage
+{
+	font-weight: bold;
+	color: #320000;
+	margin-right: 5px;
+}
+
+div.exceptionMessage
+{
+	color: #545454;
+	margin-bottom: 12px;
+}
+
+div.exceptionMessage pre
+{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+div.exceptionDetails
+{
+	border: 1px #B4B4B4 solid;
+	padding: 10px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	background-color: #F6F6ED;
+	color: #000000;
+	max-width: 950px;
+}
+
+div.exceptionContetn
+{
+	max-width: 950px;
+	max-height: 350px;
+	overflow: scroll;
+}
+
+div.screenShotDescription
+{
+	padding-left: 5px;
+	font-weight:100%;
+	font-size: 100%;
+	color: #8D8D8D;
+}
+
+img.itemScreenshot
+{
+	border: 1px #000000 solid;
+	margin-top: -10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
