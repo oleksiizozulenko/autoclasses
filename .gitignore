@@ -14,3 +14,9 @@ hs_err_pid*
 target/
 .settings/
 
+#For C# code
+.dm/
+*.suo
+Debug/ 
+bin/
+Release/
