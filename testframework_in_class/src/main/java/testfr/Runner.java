@@ -3,9 +3,12 @@ package testfr;
 public class Runner {
 
 	public static void main(String[] args) {
-	OurTest test = new OurTest();
-	test.testOurTest();
 
+		// Init our test class
+		OurTest test = new OurTest();
+
+		// execute test from our class
+		test.testOurTest();
 	}
 
 }

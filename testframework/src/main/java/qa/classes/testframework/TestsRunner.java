@@ -3,19 +3,23 @@ package qa.classes.testframework;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 import net.sf.extcos.ComponentQuery;
 import net.sf.extcos.ComponentScanner;
 
 /**
- * Hello world!
- *
+ * Runner for tests
  */
 public class TestsRunner {
+	private static Logger log = Logger.getLogger(TestsRunner.class);
 
 	public static void main(String[] args) {
 
 		final Set<Class<? extends ITest>> classes = new HashSet<Class<? extends ITest>>();
 
+		// Select all tests from package qa.classes.testframework.tests and his
+		// children
 		ComponentScanner scanner = new ComponentScanner();
 		scanner.getClasses(new ComponentQuery() {
 			@Override
@@ -26,7 +30,9 @@ public class TestsRunner {
 			}
 		});
 
-		for (Class test : classes) {
+		// now time to execute every test case sequentially
+		log.info("Stating executing test cases");
+		for (Class<? extends ITest> test : classes) {
 			try {
 				ITest execute = (ITest) test.newInstance();
 
@@ -34,14 +40,12 @@ public class TestsRunner {
 				execute.run();
 				execute.after();
 			} catch (InstantiationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				log.error(e);
 			} catch (IllegalAccessException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				log.error(e);
 			}
-
 		}
+		log.info("Test cases execution finished");
 
 	}
 }

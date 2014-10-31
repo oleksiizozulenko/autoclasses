@@ -3,18 +3,14 @@ package qa.classes.testframework.tests;
 import qa.classes.testframework.ITest;
 import qa.classes.testframework.log.Logger;
 
-
 /**
- * Unit test for simple App.
+ * Test case that uses self developed logger
  */
-public class TestInternalLogger 
-   implements ITest
-{
-    Logger log = Logger.getLogger("C:\\temp\\");
+public class TestInternalLogger implements ITest {
+	Logger log = Logger.getLogger("C:\\temp\\");
 
 	public void before() {
 		log.info("before");
-		
 	}
 
 	public int run() {
@@ -23,7 +19,7 @@ public class TestInternalLogger
 	}
 
 	public void after() {
-	log.info("after");
-		
+		log.info("after");
+
 	}
 }
