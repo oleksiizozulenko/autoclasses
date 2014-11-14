@@ -2,11 +2,13 @@ package qa.classes;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class TDDExmpl extends BaseTest {
 
@@ -17,7 +19,8 @@ public class TDDExmpl extends BaseTest {
 		driver = new FirefoxDriver();
 	}
 
-	@After
+	//@After
+	//@Ignore
 	public void tearDown() {
 		if (driver != null) {
 			driver.close();
@@ -32,6 +35,16 @@ public class TDDExmpl extends BaseTest {
 		linkContains("hello");
 	}
 
+	@Test
+	public void testDropDown(){
+		driver.get("http://the-internet.herokuapp.com/dropdown");
+		WebElement sel = driver.findElement(By.id("dropdown"));
+		Select selEl = new Select(sel);
+		selEl.selectByVisibleText("Option 1");
+	}
+	
+	
+	
 	private void linkContains(String string) {
 		// TODO Auto-generated method stub
 

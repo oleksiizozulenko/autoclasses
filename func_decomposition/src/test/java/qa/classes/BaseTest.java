@@ -1,24 +1,37 @@
 package qa.classes;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import ru.stqa.selenium.factory.WebDriverFactory;
 
 public class BaseTest {
 
-	protected WebDriver driver;
+	protected static WebDriver driver;
 
-	@Before
-	public void setUp() throws Exception {
-		driver = new FirefoxDriver();
+	@BeforeClass
+	public static void setUpAll() throws Exception {
+	
+		driver = WebDriverFactory.getDriver(DesiredCapabilities.firefox());
 	}
 
-	@After
-	public void tearDown() throws Exception {
+	@AfterClass
+	public static void tearDownAll() throws Exception {
 		if (driver != null) {
 			driver.quit();
 			driver = null;
 		}
 	}
+	
+	@Before
+	public void setUp() {}
+	
+	@After
+	public void tearDown() {}
 }

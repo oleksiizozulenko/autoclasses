@@ -15,4 +15,10 @@ public class LoginSuccessPage extends Page {
 	public String getTitle() {
 		return driver.findElement(By.xpath("//h2")).getText();
 	}
+
+	@Override
+	protected boolean IsPageLoaded() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

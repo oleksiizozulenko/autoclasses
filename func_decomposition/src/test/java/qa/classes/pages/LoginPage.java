@@ -39,4 +39,10 @@ public class LoginPage extends Page {
 		driver.findElement(By.id("username")).sendKeys(user);
 	}
 
+	@Override
+	protected boolean IsPageLoaded() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
